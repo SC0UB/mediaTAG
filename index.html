@@ -55,19 +55,19 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="#home" class="navbar-link" data-navbar-link id="home">Home</a>
+            <a href="#home" class="navbar-link" data-navbar-link id="home" onclick="scrollToSection()">Home</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#services" class="navbar-link" data-navbar-link id="services">Services</a>
+            <a href="#services" class="navbar-link" data-navbar-link id="services"  onclick="scrollToSection()">Services</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#about" class="navbar-link" data-navbar-link id="about">About</a>
+            <a href="#about" class="navbar-link" data-navbar-link id="about"  onclick="scrollToSection()">About</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link" data-navbar-link id="contactus">Case Study</a>
+            <a href="#" class="navbar-link" data-navbar-link id="contactus" onclick="scrollToSection()">Case Study</a>
           </li>
 
         </ul>
@@ -173,7 +173,7 @@
             
             
 
-           
+            
 
           </div>
 
@@ -194,7 +194,7 @@
         - #ABOUT
       -->
 
-      <section class="section about" aria-label="about" id="about">
+      <section class="section about" aria-label="about" id="aboutus">
         <div class="container">
 
           
@@ -275,41 +275,57 @@
         - #BLOG
       -->
 
-      <section class="section blog" id="blog">
+      <section class="section blog" id="casestudy">
         <div class="container" style="width: 100%; max-width: 1200px; margin: 0 auto;">
-
-          <h2 class="h2 section-title underline" style="font-size: 40px">Watch Our Free Case Study:</h2>
-              <p style="font-size: 25px;
-              text-align: center;
-              color: rgb(243, 58, 120);"
-               >" How My Agency Is Helping Info Product, Ecommerce Businesses & Social Media Marketing Agencies Scale Aggressively "</p>
+            <h2 class="h2 section-title underline" style="font-size: 40px">Watch Our Free Case Study:</h2>
+            <p style="font-size: 25px; text-align: center; color: rgb(243, 58, 120);">
+                "How My Agency Is Helping Info Product, Ecommerce Businesses & Social Media Marketing Agencies Scale Aggressively"
+            </p>
     
-          <div class="content-wrapper" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+            <div class="content-wrapper" style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start;">
 
-            
-
-
-            <div class="image-section" style="flex: 1; padding: 20px;">
-              <img src="assets/images/COMING SOON....jpg" alt="" style="width: 600px; height: 350px; border-radius: 10px; size: smaller;">
-            </div>
-    
-            <div class="text-section" style="flex: 1; padding: 20px;">
               
-              <p style="font-size: 30px;">How we consistently generate spine chilling ROI for our clients.</p>
-              <p style="font-size: 30px;
-              margin-top: 30px;">How to achieve omni-presence & dominate your competition.</p>
-
-<button href="case.html" class="btn" id="speakbutton" style="height: 70px; width: 400px; margin-top: 50px; margin-left: 45px;
-transition: all 0.3s ease;" onmouseover="this.style.transform = 'scale(1.2)';" onmouseout="this.style.transform = 'scale(1)';"> <h3>Watch The FREE Case Study.</h3>
-</button>
+              <div class="image-section" style="flex: 1; padding: 20px;">
+                <img src="assets/images/COMING SOON....jpg" alt="" style="max-width: 100%; height: auto; border-radius: 10px;">
             </div>
+                <div class="text-section" style="flex: 1; padding: 20px;">
+                    <p style="font-size: 30px;">How we consistently generate spine chilling ROI for our clients.</p>
+                    <p style="font-size: 30px; margin-top: 30px;">How to achieve omni-presence & dominate your competition.</p>
+                    <a href="case.html" class="">
+                        <ion-icon aria-hidden="true"></ion-icon>
+                        <button class="btn" id="speakbutton" style="height: 75px; width: 400px; transition: all 0.3s ease;"
+                            onmouseover="this.style.transform = 'scale(1.2)';"
+                            onmouseout="this.style.transform = 'scale(1)';">
+                            <h3>Watch The FREE Case Study.</h3>
+                        </button>
+                    </a>
+                </div>
     
-          
-    
-          </div>
-    
+            </div>
         </div>
-      </section>
+    </section>
+    
+    <style>
+        @media (max-width: 767px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+    
+            .image-section,
+            .text-section {
+                width: 100%;
+                padding: 20px;
+            }
+    
+            .image-section {
+                order: 2; /* Placing image-section after text-section */
+            }
+        }
+    </style>
+    
+    
+    
+    
 
     </article>
   </main>
@@ -444,5 +460,40 @@ transition: all 0.3s ease;" onmouseover="this.style.transform = 'scale(1.2)';" o
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
+
+
+
+
+
+
+<script>
+  function scrollToSection() {
+      // Replace 'section2' with the ID of the section you want to scroll to
+      document.getElementById('casestudy').scrollIntoView({
+          behavior: 'smooth'
+      });
+  }
+
+
+  function scrollToSection() {
+      // Replace 'section2' with the ID of the section you want to scroll to
+      document.getElementById('aboutus').scrollIntoView({
+          behavior: 'smooth'
+      });
+  }
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
 
 </html>
