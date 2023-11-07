@@ -76,74 +76,112 @@ window.addEventListener("scroll", function () {
 
 
 
-// Detect the user's browser language
-const userLanguage = navigator.language || navigator.userLanguage;
-
-// Check if the user's language is French ('fr')
-if (userLanguage.startsWith('fr')) {
-    // French language - Change content to French
-
-    // Change text content or attributes of specific elements to French
-    // For example:
-    document.title = 'MediaTAG: agence de copywriting'; // Change the title of the document
-    // Change text on various elements to French throughout the page
-    // Example: 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Determine the user's language preference using browser settings.
+var userLanguage = navigator.language || navigator.userLanguage;
+
+// Define your content in both English and French.
+var content = {
+    en: {
+
+    },
+    fr: {
+        home: "Accueil",
+        services: "Services",
+      about: "A propos",
+      case: "Etude de cas",
+      bookacall: " Réserver un appel",
+      herotitle: "MediaTAG est une agence de copywriting.",
+      ourmission: "Notre mission est de vous faire gagner plus d'argent grâce à des textes professionnels.",
+      herotext: "Arretez de perdre du temps et de l'argent avec un marketing inefficace.",
+      herotext2: "Il est temps de faire fructifier votre budget publicitaire, de développer votre activité et d'augmenter vos ventes.",
+      speakbutton:  "Planifiez votre appel GRATUIT dès maintenant ! ",
+      ourservice: "Notre service:",
+      about1: " Le copywriting est l'acte de rédiger un texte dans le but d'inciter le lecteur à agir. Nous rédigerons donc littéralement tout ce dont votre entreprise a besoin pour que plus de gens achètent chez vous : ",
+      emailmarketing: "✅​Email et sms marketing",
+      salesfunnels: "✅ Tunnels de vente",
+      adcopy: "✅ Texte publicitaire",
+      salespages: "✅ Pages de vente",
+      website: "✅ Contenu de site internet",
+      more: "✅ Et plus encore...",
+      about2: "Si vous n'êtes toujours pas convaincu, consultez notre <strong style='color : orange ; text-decoration:underline ;'>étude de cas GRATUITE</strong> sur la façon dont nous avons fait gagner à nos clients entre 10 000 et 200 000 dollars de façon constante, grâce à un bon copywriting.",
+      why: "Pourquoi Notre Agence ?",
+      about3: "Nous ne faisons qu'une chose - nous le faisons avec une concentration parfaite et mieux que quiconque. Si vous voulez une agence qui offre une solution complète de tout ce qui ne fera pas avancer l'aiguille, nous ne sommes pas pour vous. ",
+      next: "Alors, quelle est la prochaine étape ?",
+      about4: "Si vous voulez une agence où, en deux clics, vous pouvez obtenir un retour claire de vos dépenses, de vos bénéfices et de votre profit net, nous sommes faits pour vous.",
+     satclients: "Clients Satisfaits.",
+      ofdollars: "De dollars dépensés dans du marketing efficace",
+       serviceoffer: "Service Offert",
+        ourcasestudy: "Regarder Notre Etude De Cas Gratuite:",
+        howwework: "Comment mon agence aide les entreprises de ecommerce, de formations et les agences de marketing digital à se développer de manière agressive",
+       results: "Comment on génère systématiquement des retours sur investissement incroyables pour nos clients",
+        omnipresence: "Comment atteindre l'omniprésence et dominer la concurrence ?",
+        watchthecasestudy: "Regarder L'Etude De Cas GRATUITE !",
+        hope: "Nous espérons que ce site web a répondu a toutes vos questions, et nous vous attendons avec impatience parmi nos clients.",
+    }
+};
+
+// Function to update the content based on the user's language.
+function updateContent(language) {
+  document.getElementById("home").textContent = content[language].home;
+  document.getElementById("services").textContent = content[language].services;
+    document.getElementById("about").textContent = content[language].about;
+    document.getElementById("bookacall").textContent = content[language].bookacall;
+  document.getElementById("herotitle").textContent = content[language].herotitle;
+  document.getElementById("herotext").textContent = content[language].herotext;
+  document.getElementById("ourmision").textContent = content[language].ourmission
+  document.getElementById("herotext2").textContent = content[language].herotext2;
+  document.getElementById("speakbutton").textContent = content[language].speakbutton;
+  document.getElementById("ourservice").textContent = content[language].ourservice;
+  document.getElementById("about1").textContent = content[language].about1;
+  document.getElementById("emailmarketing").textContent = content[language].emailmarketing;
+  document.getElementById("salesfunnels").textContent = content[language].salesfunnels;
+  document.getElementById("adcopy").textContent = content[language].adcopy;
+  document.getElementById("salespages").textContent = content[language].salespages;
+  document.getElementById("website").textContent = content[language].website;
+  document.getElementById("more").textContent = content[language].more;
+  document.getElementById("about2 ").textContent = content[language].about2;
+  document.getElementById("why").textContent = content[language].why;
+  document.getElementById("about3").textContent = content[language].about3;
+  document.getElementById("about4").textContent = content[language].about4;
+  document.getElementById("satclients").textContent = content[language].satclients;
+  document.getElementById("ofdollars").textContent = content[language].ofdollars;
+  document.getElementById("serviceoffer").textContent = content[language].serviceoffer;
+  document.getElementById("ourcasestudy").textContent = content[language].ourcasestudy;
+    document.getElementById("howwework").textContent = content[language].howwework;
+    document.getElementById("results").textContent = content[language].results;
+    document.getElementById("omnipresence").textContent = content[language].omnipresence;
+    document.getElementById("watchthecasestudy").textContent = content[language].watchthecasestudy;
+    document.getElementById("hope").textContent = content[language].hope;
   
-    document.getElementById('home').textContent = 'Accueil';
-  document.getElementById('services').textContent = 'Services';
-  document.getElementById('about').textContent = 'A propos';
-  document.getElementById('case').textContent = 'Etude de cas';
-  document.getElementById('bookacall').textContent = 'Réserver un appel.';
-  document.getElementById('herotitle').textContent = 'MediaTAG est une agence de copywriting.';
-  document.getElementById('ourmission').textContent = "Notre mission est de vous faire gagner plus d'argent grâce à des textes professionnels. ";
-  document.getElementById('herotext').textContent = "Arretez de perdre du temps et de l'argent avec un marketing inefficace.";
-  document.getElementById('herotext2').textContent = "Il est temps de faire fructifier votre budget publicitaire, de développer votre activité et d'augmenter vos ventes.";
-  document.getElementById('speakbutton').textContent = "Planifiez votre appel GRATUIT dès maintenant ! ";
-  document.getElementById('ourservice').textContent = 'Notre service: ';
-  document.getElementById('about1').textContent = " Le copywriting est l'acte de rédiger un texte dans le but d'inciter le lecteur à agir. Nous rédigerons donc littéralement tout ce dont votre entreprise a besoin pour que plus de gens achètent chez vous : ";
-  document.getElementById('emailmarketing').textContent = '✅​Email et sms marketing';
-  document.getElementById('salesfunnels').textContent = '✅ Funnels de vente';
-  document.getElementById('adcopy').textContent = '✅ Texte publicitaire';
-  document.getElementById('salespages').textContent = '✅ Pages de vente';
-  document.getElementById('website').textContent = '✅ Contenu de site internet';
-  document.getElementById('more').textContent = '✅ Et plus encore...';
-  document.getElementById('about2').textContent = "Si vous n'êtes toujours pas convaincu, consultez notre <strong style="color : orange ; text-decoration:underline ;">étude de cas GRATUITE</strong> sur la façon dont nous avons fait gagner à nos clients entre 10 000 et 200 000 dollars de façon constante, grâce à un bon copywriting.";
-  document.getElementById('why').textContent = 'Pourquoi Notre Agence ?';
-  document.getElementById('about3').textContent = "Nous ne faisons qu'une chose - nous le faisons avec une concentration parfaite et mieux que quiconque. Si vous voulez une agence qui offre une solution complète de tout ce qui ne fera pas avancer l'aiguille, nous ne sommes pas pour vous. ";
-  document.getElementById('about4').textContent = 'Si vous voulez une agence où, en deux clics, vous pouvez obtenir un retour claire de vos dépenses, de vos bénéfices et de votre profit net, nous sommes faits pour vous. ';
-  document.getElementById('satclients').textContent = 'Clients Satisfaits.';
-  document.getElementById('ofdollars').textContent = 'De dollars dépensés dnas un marketing efficace';
-  document.getElementById('serviceoffer').textContent = 'Service Offert';
-  document.getElementById('ourcasestudy').textContent = 'Regarder Notre Etude De Cas Gratuite:';
-  document.getElementById('howwework').textContent = "Comment mon agence aide les entreprises de ecommerce, de formations et les agences de marketing digital à se développer de manière agressive";
-  document.getElementById('results').textContent = 'Comment on génère systématiquement des retours sur investissement incroyables pour nos clients';
-  document.getElementById('omnipresence').textContent = "Comment atteindre l'omniprésence et dominer la concurrence ?";
-  document.getElementById('watchthecasestudy').textContent = "Regarder L'Etude De Cas GRATUITE !";
-  document.getElementById('hope').textContent = 'MediaTAG est une agence de rédaction publicitaire.Nous espérons que ce site web a répondu a toutes vos questions, et nous vous attendons avec impatience parmi nos clients.';
-
-  
-    // Change href attribute of specific links if needed
-    // Example:
-
-
-
-
-
-
-  
-    document.querySelectorAll('a[href="case.html"]').forEach(link => {
-        link.href = 'cas.html'; // Change the link's href to a French version
-    });
-
-    // Hide or show elements based on language
-    // Example: Hide elements specific to English
-    document.getElementById('someElementInEnglish').style.display = 'none';
-} else {
-    // Default to English - Keep the content in English
 }
 
-// You would need to customize this to your specific elements and content that you want to change based on the language.
-
+// Check the user's language preference and update the content.
+if (userLanguage.startsWith("fr")) {
+    updateContent("fr");
+} else {
+    updateContent("en");
+}
