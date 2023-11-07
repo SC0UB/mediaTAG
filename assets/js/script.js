@@ -105,13 +105,6 @@ var userLanguage = navigator.language || navigator.userLanguage;
 
 
 
-// Check the user's language preference and update the content.
-if (userLanguage.startsWith("fr")) {
-    updateContent("fr");
-} else {
-    updateContent("en");
-}
-
 
 // Define your content in both English and French.
 var content = {
@@ -190,3 +183,11 @@ function updateContent(language) {
 }
 
 
+
+
+// Check the user's language preference and update the content.
+if (userLanguage.startsWith("fr")) {
+    updateContent("fr");
+} else {
+    updateContent("en");
+}
