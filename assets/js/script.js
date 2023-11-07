@@ -103,6 +103,16 @@ window.addEventListener("scroll", function () {
 // Determine the user's language preference using browser settings.
 var userLanguage = navigator.language || navigator.userLanguage;
 
+
+
+// Check the user's language preference and update the content.
+if (userLanguage.startsWith("fr")) {
+    updateContent("fr");
+} else {
+    updateContent("en");
+}
+
+
 // Define your content in both English and French.
 var content = {
     en: {
@@ -152,7 +162,7 @@ function updateContent(language) {
     document.getElementById("bookacall").textContent = content[language].bookacall;
   document.getElementById("herotitle").textContent = content[language].herotitle;
   document.getElementById("herotext").textContent = content[language].herotext;
-  document.getElementById("ourmision").textContent = content[language].ourmission
+  document.getElementById("ourmission").textContent = content[language].ourmission
   document.getElementById("herotext2").textContent = content[language].herotext2;
   document.getElementById("speakbutton").textContent = content[language].speakbutton;
   document.getElementById("ourservice").textContent = content[language].ourservice;
@@ -179,9 +189,4 @@ function updateContent(language) {
   
 }
 
-// Check the user's language preference and update the content.
-if (userLanguage.startsWith("fr")) {
-    updateContent("fr");
-} else {
-    updateContent("en");
-}
+
