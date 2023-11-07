@@ -109,6 +109,42 @@ var userLanguage = navigator.language || navigator.userLanguage;
 // Define your content in both English and French.
 var content = {
     en: {
+      home: "Home",
+        services: "Services",
+      about: "About",
+      case: "Case Study",
+      bookacall: " Book a call !",
+      herotitle: "MediaTAG is a copywriting agency.",
+      ourmission: "Our mission is to make you win more money through professional copy.",
+      herotext: "Stop wasting time and money on faulty and ineffective marketing.",
+      herotext2: "It's time to make your ad-budget count, scale your business and blow up your sales.",
+      speakbutton:  "Schedule Your FREE Audit Call Right Now!",
+      ourservice: "Our Service:",
+      about1: " Copywriting is the act of writing copy in order to make the reader take action. So we will literally just write anything your business needs to make more people buy from you:",
+      emailmarketing: "✅​Email and sms marketing",
+      salesfunnels: "✅ Sales Funnels",
+      adcopy: "✅ Ad copy",
+      salespages: "✅ Sales pages",
+      website: "✅ Website content",
+      more: "✅ And much more...",
+      about2: "If you are still not convinced yet, check out our FREE case study on how we made our clients $10,000 to $200,000 consistently, with good copywriting.",
+      why: "Why Our Agency",
+      about3: "We do one thing - we just do it with a monastic focus and better than anyone else. If you want an agency that offers a full service solution of everything that won’t move the needle forward, we’re not for you. ",
+      
+      about4: "If you want an agency where with two clicks, you can get a clear breakdown of how much was spent, how much was made & what your net profit was - we’re for you.",
+     satclients: "Satisfied Clients.",
+      ofdollars: "of dollars spent on effective marketing.",
+       serviceoffer: "Service offer.",
+        ourcasestudy: "Watch Our Free Case Study:",
+        howwework: "How My Agency Is Helping Info Product, Ecommerce Businesses & Social Media Marketing Agencies Scale Aggressively",
+       results: "How we consistently generate spine chilling ROI for our clients.",
+        omnipresence: "How to achieve omni-presence & dominate your competition.
+
+",
+        watchthecasestudy: "Watch The FREE Case Study",
+        hope: "We hope that going through this website answered all your questions, feel free to contact us for more information.
+
+",
 
     },
     fr: {
