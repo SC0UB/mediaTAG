@@ -227,3 +227,8 @@ if (userLanguage.startsWith("fr")) {
 } else {
     updateContent("en");
 }
+
+
+function switchLanguage(language) {
+  updateContent(language);
+}
