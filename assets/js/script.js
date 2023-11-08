@@ -138,13 +138,9 @@ var content = {
         ourcasestudy: "Watch Our Free Case Study:",
         howwework: "How My Agency Is Helping Info Product, Ecommerce Businesses & Social Media Marketing Agencies Scale Aggressively",
        results: "How we consistently generate spine chilling ROI for our clients.",
-        omnipresence: "How to achieve omni-presence & dominate your competition.
-
-",
+        omnipresence: "How to achieve omni-presence & dominate your competition.",
         watchthecasestudy: "Watch The FREE Case Study",
-        hope: "We hope that going through this website answered all your questions, feel free to contact us for more information.
-
-",
+        hope: "We hope that going through this website answered all your questions, feel free to contact us for more information.",
 
     },
     fr: {
