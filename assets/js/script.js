@@ -181,6 +181,7 @@ var content = {
 
 // Function to update the content based on the user's language.
 function updateContent(language) {
+  document.getElementById("case").textContent = content[language].case;
   document.getElementById("home").textContent = content[language].home;
   document.getElementById("services").textContent = content[language].services;
     document.getElementById("about").textContent = content[language].about;
