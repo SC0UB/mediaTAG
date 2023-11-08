@@ -198,7 +198,7 @@ function updateContent(language) {
   document.getElementById("salespages").textContent = content[language].salespages;
   document.getElementById("website").textContent = content[language].website;
   document.getElementById("more").textContent = content[language].more;
-  document.getElementById("about2 ").textContent = content[language].about2;
+  document.getElementById("about2").textContent = content[language].about2;
   document.getElementById("why").textContent = content[language].why;
   document.getElementById("about3").textContent = content[language].about3;
   document.getElementById("about4").textContent = content[language].about4;
