@@ -123,7 +123,7 @@ var content = {
       about1: " Copywriting is the act of writing copy in order to make the reader take action. So we will literally just write anything your business needs to make more people buy from you:",
       emailmarketing: "✅​Email and sms marketing",
       salesfunnels: "✅ Sales Funnels",
-      adcopy: "✅ Ad copy",
+      adcopy: "✅ Ad ",
       salespages: "✅ Sales pages",
       website: "✅ Website content",
       more: "✅ And much more...",
@@ -229,6 +229,4 @@ if (userLanguage.startsWith("fr")) {
 }
 
 
-function switchLanguage(language) {
-  updateContent(language);
-}
+
