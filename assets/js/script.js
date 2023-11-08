@@ -161,7 +161,7 @@ var content = {
       salespages: "✅ Pages de vente",
       website: "✅ Contenu de site internet",
       more: "✅ Et plus encore...",
-      about2: "Si vous n'êtes toujours pas convaincu, consultez notre <strong style='color : orange ; text-decoration:underline ;'>étude de cas GRATUITE</strong> sur la façon dont nous avons fait gagner à nos clients entre 10 000 et 200 000 dollars de façon constante, grâce à un bon copywriting.",
+      about2: "Si vous n'êtes toujours pas convaincu, consultez notre étude de cas GRATUITE sur la façon dont nous avons fait gagner à nos clients entre 10 000 et 200 000 dollars de façon constante, grâce à un bon copywriting.",
       why: "Pourquoi Notre Agence ?",
       about3: "Nous ne faisons qu'une chose - nous le faisons avec une concentration parfaite et mieux que quiconque. Si vous voulez une agence qui offre une solution complète de tout ce qui ne fera pas avancer l'aiguille, nous ne sommes pas pour vous. ",
       next: "Alors, quelle est la prochaine étape ?",
